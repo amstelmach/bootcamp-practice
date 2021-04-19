@@ -1,9 +1,9 @@
 body {
     font-family:'Noto Sans', sans-serif;
-    background: whitesmoke;
+    background-color: whitesmoke;
+    color: gray;
 
 }
-
 
 
 .main-menu {
@@ -11,19 +11,41 @@ body {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    
+
 
 }
 
-.main-item {
+li.main-item {
         font-size: 25px;
-        text-transform:uppercase;
-        width: 40px;
-        height: 40px;
-        padding: 20px;
-        border: 1 px solid black;
+        text-transform:capitalize;
+        text-align:center;
+        font-weight: 700;
+        height:fit-content;
+        width: auto;
+        padding: 5px 15px;
+        margin: 10px 5px;
 
 }
 
 a {
     text-decoration: none;
+    padding: 5px 0px;
+    color: #117A65;
+}
+
+a:link {
+    color: #117A65;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#73C6B6;
+    border-bottom: 4px solid #73C6B6;
+}
+
+.main-content {
+    height: auto;
+
+
 }
