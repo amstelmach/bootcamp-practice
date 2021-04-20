@@ -1,20 +1,19 @@
+
 body {
     font-family:'Noto Sans', sans-serif;
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(0,163,108,1) 70%, rgba(0,163,108,1) 100%);
-   
-
+    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(0,163,108,1) 70%, rgba(0,163,108,1) 100%); 
 }
-
 
 .main-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
-    
-
-
+    align-items: center;
+    max-width: 1591px;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
 li.main-item {
@@ -22,14 +21,10 @@ li.main-item {
         text-transform:capitalize;
         text-align:center;
         font-weight: 700;
-        height:fit-content;
-        width: auto;
-        padding: 5px 15px;
-        margin: 10px 5px;
-
+        margin: 0px;
 }
 
-a {
+a{
     text-decoration: none;
     padding: 5px 0px;
     color: #117A65;
@@ -46,17 +41,17 @@ li a:hover{
 }
 
 .main-content {
-    height: 600px;
+    height: 700px;
     box-sizing: content-box;
-    padding: 120px 50px;
-    margin: 30px;
-    width: 1000px;
+    padding: 70px 0;
+    margin: 0 auto;
+    width: 1591px;
     position: relative;
     background-image: url(landing-page.png);
     background-repeat: no-repeat;
     background-clip: content-box;
-    background-position: 100% 75%;
-    background-size: 90%;
+    background-position: 85%;
+    background-size: 60%;
 
 }
 
