@@ -52,7 +52,6 @@ li a:hover{
     background-clip: content-box;
     background-position: 85%;
     background-size: 60%;
-
 }
 
 h1 {
@@ -66,7 +65,6 @@ span {
     font-size: 15px;
     color:#73C6B6;
 }
-
 
 p {
     width:400px;
@@ -83,5 +81,4 @@ button{
     color: #73C6B6;
     border-radius: 25px;
     background-color: #fff;
-
 }
