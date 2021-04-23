@@ -13,9 +13,12 @@ div{
     margin: auto auto;
     border: 6px solid #FFC000;
     border-radius: 6px;
-    width: 80vw;
-    height: 75vh;
+    width: 69vw;
+    height: 80vh;
     justify-content: center;
     box-shadow: 1px 0px 15px 9px rgba(255,192,0,0.2);
+    background-image: url(food.jpg);
+    background-repeat: no-repeat;
 
 }
+
