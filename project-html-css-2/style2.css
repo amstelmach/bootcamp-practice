@@ -22,3 +22,13 @@ div{
 
 }
 
+nav#main{
+    box-sizing:border-box;
+    width: 100%;
+    height: 190px;
+    background-color: #212F3D;
+    margin-top: 570px;
+}
+
+
+
