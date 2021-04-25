@@ -15,18 +15,22 @@ div {
     border-radius: 6px;
     width: 69vw;
     height: 80vh;
+    display: flex;
     justify-content: center;
+    align-items: flex-end;
     box-shadow: 1px 0px 15px 9px rgba(255,192,0,0.2);
     background-image: url(food.jpg);
     background-repeat: no-repeat;
+    background-clip: padding-box;
 }
+
+
 
 nav#main {
     box-sizing:border-box;
     width: 100%;
-    height: 190px;
+    height: 180px;
     background-color: #212F3D;
-    margin-top: 520px;
 }
 
 nav#main ul {
@@ -34,9 +38,11 @@ nav#main ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: auto;
-    margin: 0;
-    padding: 30px 100px;
+    height: 180px;
+    margin: 0 auto;
+    padding: 0 0;
+    
+
 }
 
 ul li {
