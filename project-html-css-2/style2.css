@@ -46,3 +46,27 @@ nav.icons{
     flex-grow: 1;
     text-align:center;  
 }
+
+
+.main-menu ul{
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 60px 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.main-menu{
+   width: 1280px; 
+   height: 250px;
+   background-color: #36454F;
+   position: relative;
+}
+
+.main-menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+}
