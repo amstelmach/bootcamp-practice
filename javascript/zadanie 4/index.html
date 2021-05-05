@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color:antiquewhite;
+        }
+       
+        header{
+            background-color:lightgray;
+            width: 60%;
+            padding:10px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .animals {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 70%;
+            margin: 0 auto;background-color: grey;
+            border-radius: 10px;
+            font-size: 2em;
+        }
+
+        .box {
+            width: 30%;
+            background-color: grey;
+            text-align: center;
+            margin: 20px 10%;
+            padding: 20px 0;
+            border-radius: 10px;  
+        }
+
+        .box:hover{
+            background-color: lightgray;
+        }
+        
+        footer {
+            margin: 35px;
+            text-align: center;
+        }
+
+        .add-btn:hover {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your favorite animal is: <span id="fav-animal"></span></h1>
+    </header>
+    <div class="animals">
+        <div class="box">🐈</div>
+        <div class="box">🐕</div>
+        <div class="box">🦊</div>
+        <div class="box">🐺</div>
+        <div class="box">🦓</div>
+        <div class="box">🐅</div>
+    </div>
+    <footer>
+        <button class="add-btn">Add animal</button>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
