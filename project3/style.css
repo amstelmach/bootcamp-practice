@@ -2,7 +2,7 @@
 body {
     background-image: url(background.jpg);
     background-attachment: scroll;
- 
+    font-family: 'Roboto', sans-serif;
 }
 
 div.main-container {
@@ -33,4 +33,39 @@ div.main-container {
     grid-row-start: 7;
     grid-row-end: 11;
     border: 1px solid black;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 20px auto;
+    padding: 0;
+    align-self: center;
+}
+
+li.nav-logo {
+    flex-grow: 1; 
+}
+
+li.nav-option {
+    padding: 0 15px;
+    align-self: center;
+}
+
+li.nav-option-icon {
+    padding-left: 10px;
+    align-self: center;
+}
+
+ul li:nth-child(5) {
+    padding-left: 30px;
+}
+
+li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.25px;
 }
