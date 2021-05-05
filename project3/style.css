@@ -1,0 +1,36 @@
+
+body {
+    background-image: url(background.jpg);
+    background-attachment: scroll;
+ 
+}
+
+div.main-container {
+    max-width: 1280px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#navigation {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    border: 1px solid black;
+}
+
+#menu {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    border: 1px solid black;
+}
+
+#options {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    border: 1px solid black;
+}
