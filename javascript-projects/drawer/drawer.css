@@ -88,3 +88,8 @@ body {
     border: 5px solid #CACFD2;
     border-radius: 50%;
 }
+
+.toggleBtn::before {
+    content: '\f105';
+    font-family: fontAwesome;
+}
