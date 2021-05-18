@@ -26,7 +26,8 @@ body {
 .collapse .collBox .name {
     position: relative;
     padding: 10px;
-    background:tomato;
+    font-weight: 600;
+    background: #7393B3;
     color: whitesmoke;
     cursor: pointer;
 }
@@ -37,7 +38,7 @@ body {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .collapse .collBox.active .name::before {
@@ -52,6 +53,7 @@ body {
     background: whitesmoke;
     transition: 0.5s;
     overflow-y: auto;
+    font-size: 15px;
 }
 
 .collapse .collBox.active .content {
