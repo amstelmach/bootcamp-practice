@@ -50,6 +50,6 @@ body {
 }
 
 .collapse .collBox.active .content {
-    height: 150px;
+    height: 85px;
     padding: 10px;
 }
