@@ -39,3 +39,17 @@ body {
     transform: translateY(-50%);
     font-size: 20px;
 }
+
+.content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    background: whitesmoke;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.collapse .collBox.active .content {
+    height: 150px;
+    padding: 10px;
+}
