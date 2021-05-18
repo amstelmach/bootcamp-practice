@@ -17,3 +17,17 @@ body {
 .collapse {
     width: 900px;
 }
+
+.collapse .collBox {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.collapse .collBox .name {
+    position: relative;
+    padding: 10px;
+    background:tomato;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
