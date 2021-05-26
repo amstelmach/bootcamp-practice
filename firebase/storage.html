@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input name="file" type="file">
+        <button type="submit">send</button>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+
+    <script>
+        
+        var firebaseConfig = {
+            apiKey: "AIzaSyBtKUspFdhwEmMGMcXlb7jgZla8aeG8ihI",
+            authDomain: "isa-application-40a0e.firebaseapp.com",
+            projectId: "isa-application-40a0e",
+            storageBucket: "isa-application-40a0e.appspot.com",
+            messagingSenderId: "41625123071",
+            appId: "1:41625123071:web:24d5d7eb1255ee5213f4ca"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const storage = firebase.storage();
+
+
+    document.querySelector('form').addEventListener('submit', e => {
+        e.preventDefault();
+        const files = e.target.querySelector('input').files;
+        if (files.length) {
+            storage.ref().child(`${+new Date()}.jpg`).put(files[0]).then(console.log).catch(console.error);   
+        }
+    });
+
+
+    const rootRef = storage.ref();
+    const listByRef = (ref = rootRef) => ref.listAll()
+        .then(re => {
+            re.prefixes.forEach(item => {
+                console.log(item.name);
+                listByRef(item);
+            });
+            re.items.forEach(item => {
+                console.log(item.name);
+            });
+        });
+        listByRef();
+    </script>
+</body>
+</html>
