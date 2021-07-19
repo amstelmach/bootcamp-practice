@@ -1,0 +1,62 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+.collapse {
+    width: 900px;
+}
+
+.collapse .collBox {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.collapse .collBox .name {
+    position: relative;
+    padding: 10px;
+    font-weight: 600;
+    background: #7393B3;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.collapse .collBox .name::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+.collapse .collBox.active .name::before {
+    content: '-';
+}
+
+
+.content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    background: whitesmoke;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 15px;
+}
+
+.collapse .collBox.active .content {
+    height: 85px;
+    padding: 10px;
+}
