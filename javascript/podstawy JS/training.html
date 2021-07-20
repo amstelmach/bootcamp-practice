@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+    const tab = ["Ala", "ma", "rudego", "kota"];
+
+    console.log(tab[1]);
+    console.log(tab[3]);
+    console.log(tab.length);
+    console.log(tab[tab.length-1]);
+    console.log(tab[tab.length-1]);
+
+    tab.push("sto", "dwieście")
+    console.log(tab);
+
+    tab[7] = "cokolwiek"
+    console.log(tab);
+
+    tab[tab.length] = "gdziekolwiek";
+    console.log(tab);
+
+    console.log(Array.isArray(tab));
+
+    tab.pop();
+    console.log(tab);
+
+    tab.unshift("pomidor");
+    console.log(tab);
+
+    const deleted = tab.shift();
+
+    console.log(tab);
+    console.log(deleted);
+
+    console.log(tab.join());
+    console.log(tab.join("  -  "));
+
+    console.log(tab.join("").length);
+
+
+    const tekst = "ziemniak";
+    const tab1 = [...tekst];
+    console.log(tab1);
+    console.log(tab1.reverse());
+
+    console.log(tab.indexOf("pomidor"));
+    console.log(tab.indexOf("Ala"));
+
+    console.log(tab.includes("Ala"));
+    console.log(tab.includes("kartofel"));
+    tab.sort();
+    console.log(tab);
+
+
+    const tabNum = [10, 200, 400, 77, 2, 1000, 859];
+
+    function compare(a,b) {
+        return a-b
+    }
+
+    console.log(tabNum.sort(compare));
+
+    const anim1 = ['słoń','zebra'];
+    const anim2 = ['chomik','lew'];
+    const anim3 = ['kot', 'pies'];
+
+    const table1 = anim1.concat(anim2);
+    console.log(table1);
+
+    const bigTable = anim1.concat(anim2, anim3);
+    console.log(bigTable);
+
+    const table2 = [...anim1, ...anim2];
+    console.log(table2);
+
+
+    // spełnienie warunku - every();
+
+    const numbers = [1, 2, 3, 4, 5];
+    const positive = numbers.every(isPositive)
+    function isPositive(item) {
+        return item > 0;
+    }
+
+    console.log(positive);
+
+    const persons = [
+        {
+            name: 'alicja'
+        },
+        {
+            name: 'michał'
+        },
+        {
+            name: 'kasia'
+        },
+        {
+            surname: 'stelmach'
+        }
+    ];
+
+    const result = persons.every(person => person.name !== undefined);
+
+    console.log(result);  
+
+    // spełnienie warunku - some();
+
+    const numbers1 = [1, 2, 3, 4, 5];
+
+    numbers1.some(greaterThanFour);
+
+    function greaterThanFour(item) {
+        return item > 4;
+    }
+
+    const result1 = numbers1.some(greaterThanFour);
+    console.log(result1);
+
+
+    const persons1 = [
+        {
+            name: 'alicja',
+            age: 28
+        },
+        {
+            name: 'michał',
+            age: 27
+        },
+        {
+            name: 'kasia',
+            age: 15
+        }
+    ];
+
+    persons1.some(isAdult);
+    const result2 = persons1.some(isAdult);
+
+    function isAdult(persons1) {
+        return persons1.age >= 18;
+    };
+
+    // zwracanie nowej tablicy - map();
+
+    const numArr = [1, 2, 3, 4, 5];
+
+    numArr.map(double);
+
+    function double(value, index, arr) {
+        return value * 2;
+    }
+
+    const numberDouble = numArr.map(double);
+
+    console.log(numArr);
+
+    console.log(numberDouble);
+
+
+
+    // automatyczna pętla po tablicy - forEach();
+
+    const numbersAgain = [1, 2, 3, 4, 5];
+
+    numbersAgain.forEach(consoleItem);
+
+    function consoleItem(item, index, arr) {
+        console.log(item);
+        console.log('a[' + index + '] = ' + item);
+    }
+    
+
+    </script>
+</body>
+</html>
