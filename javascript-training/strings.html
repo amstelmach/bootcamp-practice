@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>strings training</title>
+  </head>
+  <body>
+    <script>
+      // challenge 1
+
+      // na początku używany metody split() aby zwrócić nową tablicę
+      const str = "hello";
+      const splitString = str.split("");
+      console.log(splitString);
+
+      //następnie używamy metody reverse() aby odwrócić otrzymaną tablicę
+
+      const reverseArray = splitString.reverse();
+      console.log(reverseArray);
+
+      // w ostatnim kroku używamy metody join(), aby połączyć wszystkie elementy tablicy w string
+
+      const joinArray = reverseArray.join("");
+      console.log(joinArray);
+
+      // połączenie wszystkich kroków
+
+      function reverseText(str) {
+        return str.split("").reverse("").join("");
+      }
+
+      const word = "tomato";
+      console.log(reverseText(word));
+      console.log(typeof word);
+
+      // challenge 2
+
+      //function isPalindrom() {
+      //    if (word.value === word.split("").reverse("").join("").value) {
+      //    return true
+      //} else { return false
+      //}
+
+      //console.log(isPalindrom(word));
+
+      // challenge 3
+      //funckja-walidator, która sprawdzi czy hasło ma przynajmniej: 6 znaków, jeden znak specjalny, jedną liczbę
+
+      function isPasswordCorrect(pass) {
+        if (
+          pass.match(/[a-z]/g) &&
+          pass.length > 6 &&
+          pass.match(/.[!,@,#,$,%,^,&,*,?,_,~]/) &&
+          pass.match(/\d+/)
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      const password = "banan";
+      const password1 = "abradadabra12!";
+      console.log(isPasswordCorrect(password));
+      console.log(isPasswordCorrect(password1));
+
+      // challenge 4 - numer telefonu
+
+      // function createPhoneNumber(number) {
+      //     return number.match([0-9]{3} + "" + [0-9]{3}-[0-9]{4});
+      //}
+
+      //challenge 5 - wyodrębienie inicjałów
+
+      //function getInitials(name) {
+      //    return name.
+      //}
+    </script>
+  </body>
+</html>
