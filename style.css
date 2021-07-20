@@ -1,0 +1,189 @@
+
+body {
+    background-image: url(background.jpg);
+    background-attachment: scroll;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+}
+
+
+div.main-container {
+    max-width: 1280px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#navigation {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    border-left: 0.25px solid white;
+    border-right: 0.25px solid white;
+}
+
+
+
+#options {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    border-left: 0.25px solid white;
+    border-right: 0.25px solid white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 20px auto;
+    padding: 0;
+    align-self: center;
+}
+
+li.nav-logo {
+    flex-grow: 1; 
+}
+
+li.nav-option {
+    padding: 0 15px;
+    align-self: center;
+}
+
+li.nav-option-icon {
+    padding-left: 10px;
+    align-self: center;
+}
+
+ul li:nth-child(5) {
+    padding-left: 30px;
+}
+
+li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+
+main#menu {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border-left: 0.25px solid white;
+    border-right: 0.25px solid white;
+
+}
+
+section.content {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*height: auto;
+    width: auto;
+    */
+}
+
+span {
+    display: inline-block;
+    width: 400px;
+    margin: 20px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 15px 0;
+    color: white;
+}
+
+p {
+    width: 80%;
+    line-height: 2.2em;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+section.content a {
+    width: 120px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 20px 30px;
+    border-radius: 35px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-weight: 500;
+}
+
+section.content-picture {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    background-image: url(greece.jpg);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+div.date-in {
+    display: flex;
+}
+
+div.date-out {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+input {
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: initial;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
